@@ -1,6 +1,6 @@
 # iamgonzalez.com.br
 
-My github-hosted personal site - [https://iamgonzalez.com.br](https://iamgonzalez.com.br "https://iamgonzalez.com.br").
+My github-hosted personal site - [https://iamgonzalez.github.io](https://iamgonzalez.github.io "https://iamgonzalez.github.io").
 
 ## AngularJS GitHub Repository
 
