@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>Diego Gonzalez</title>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Diego Gonzalez">
+        <meta name="description" content="My github-hosted personal site">
+        <meta name="keywords" content="diego, gonzalez, pessoal, personal, site, sites, web, desenvolvimento, github, linkedin, lattes, c, c++, java, c#, python, tensorflow, researcher, developer, web, graphic, artist, design, aprendizado, maquina, machine, learning, reconhecimento, padrões, pattern, recognition, visão, computacional, computer, vision, ciência, dados, data, science, negócios, inteligência, business, intelligence">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/base.css">
+      	<link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107732247-1"></script>
+
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-107732247-1');
+        </script>
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+        <script type="text/javascript">
+          jQuery(document).ready(function($){ 
+              $(".scroll").click(function(event){        
+                  event.preventDefault();
+                  $("html, body").animate({scrollTop:$(this.hash).offset().top}, 500);
+             });
+          });
+		</script>
+
+		<!-- jQuery -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+	  	  jQuery(document).ready(function(){
+	         jQuery("#top").hide();
+	          jQuery("a#top").click(function(){
+   	            jQuery("html, body").animate({scrollTop:0}, 500);
+	            return false;
+	          });
+	          jQuery(window).scroll(function(){
+	            if (jQuery(this).scrollTop() > 150){
+	              jQuery("#top").fadeIn();
+	            } else {
+		          jQuery("#top").fadeOut();
+	            }
+	          });
+	      });
+       </script>
+    </head>
+
+    <body class="home">
+      <header>
+        <!-- Logo -->
+        <a class="logo" href="iamgonzalez.github.io">
+          <img src="images/diego-gonzalez-logo.png" id="logo">
+        </a>
+
+        <!-- Navigation -->
+        <nav>
+          <a href="#about" class="active">sobre mim</a>
+          <a href="#projects" class="scroll">projetos</a>
+          <a href="#contact" class="scroll">contato</a>
+        </nav>
+      </header>
+
+      <!-- About -->
+      <section class="about">
+        <div class="content">
+          <h1>Estudante de Sistemas de Informação pela Universidade Estácio de Sá (UNESA) — 2° período. Venho estudando Data Science desde 2020, onde estou fazendo um processo de transição de carreira da área de Educação para a área de TI, área esta, que desejo em breve ter a oportunidade de ingressar.
+
+            Além disso, sou estudante de Administração pela Universidade Federal Rural do Rio de Janeiro (UFRRJ) — 7° período e sou licenciado em História pela Universidade Católica de Petrópolis (UCP), formação esta, adquirida no ano de 2016.</h1>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" ng-app="repository">
+        <div class="content">
+          <h1 id="projects">Projects</h1>
+
+          <p>Alguns repositórios no GitHub:</p>
+          <br>
+          <div github-repo="iamgonzalez/Used-Words-Twitter-Candidates-Election-BR-22" github-repo-options="{stars: true, forks: true, issues: false, author: true}"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact">
+        <div class="content">
+          <p id="contact"></p>
+
+          <!-- Avatar -->
+          <img src="images/diego-gonzalez-avatar.jpg" id="avatar">
+
+          <h3>Diego Gonzalez</h3>
+
+          <div class="details">
+            <p><a href="https://github.com/iamgonzalez" target="_blank">GitHub</a></p>
+	          <p><a href="https://stackoverflow.com/users/15314956/iamgonzalez" target="_blank">StackOverflow</a></p>
+            <p><a href="https://www.linkedin.com/in/iamgonzalez" target="_blank">LinkedIn</a></p>
+            <p><a href="http://lattes.cnpq.br/3327537916748986" target="_blank">Lattes</a></p>
+            <p><a href="mailto:diegogonzalezrj@live.com" target="_blank">E-mail</a></p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section class="footer">
+        <div class="content">
+        <p>Copyright © 2022 iamgonzalez</p>
+        <br>
+        <p>Diego Gonzalez</p>
+        </div>
+		
+		<a id="top">
+      ⬆
+		</a>
+      </section>
+
+        <!-- AnjularJS -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="javascript/angular-github-repo.js"></script>
+
+        <script>
+            angular.module("repository", ["githubRepo"]);
+        </script>
+    </body>
+</html>
